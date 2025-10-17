@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Breeze | Luxury Secluded Cabin in Rural Virginia</title>
+    <meta name="description" content="Escape to Mountain Breeze, a luxurious and secluded vacation rental in the heart of the Virginia countryside. Your private getaway for relaxation and adventure awaits.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons for simple icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Fancybox CSS for Lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gallery-img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: brightness(100%);
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+            filter: brightness(105%);
+        }
+        .hero-bg {
+            height: 90vh; /* Adjust height as needed */
+            background-image: url('https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-text-shadow {
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+    
+    <!-- 
+      SEO BEST PRACTICE: JSON-LD Structured Data
+      This tells Google that your page is about a Vacation Rental.
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "name": "Mountain Breeze",
+      "description": "A secluded luxury retreat in the Virginia Countryside, perfect for romantic getaways and family vacations.",
+      "image": "https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rural Retreat",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "petsAllowed": "False",
+      "smokingAllowed": "False",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Hot Tub"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Sauna"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Gym"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Gourmet Kitchen"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "High-Speed WiFi"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900">Mountain Breeze</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#property" class="text-slate-600 hover:text-green-800 transition duration-300">The Property</a>
+                <a href="#amenities" class="text-slate-600 hover:text-green-800 transition duration-300">Amenities</a>
+                <a href="#explore" class="text-slate-600 hover:text-green-800 transition duration-300">Explore</a>
+                <a href="#host" class="text-slate-600 hover:text-green-800 transition duration-300">Your Host</a>
+                <a href="mailto:chris@opstrllc.com" class="text-slate-600 hover:text-green-800 transition duration-300">Contact</a>
+            </div>
+            <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
+            <a href="#" class="bg-green-800 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-green-900 transition transform hover:-translate-y-0.5 duration-300">
+                Book Now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- REVISED Hero Section -->
+        <section class="hero-bg text-white flex items-end justify-center relative">
+            <!-- Gradient overlay for text readability -->
+            <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black/70 to-transparent"></div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center pb-8 md:pb-16">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 hero-text-shadow">Experience Secluded Luxury.</h1>
+                    <p class="text-lg md:text-xl text-slate-200 hero-text-shadow">Unwind in the heart of the Virginia Countryside. Your private sanctuary awaits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVISED Property Showcase Section -->
+        <section id="property" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-900">Your Private Luxury Getaway</h2>
+                    <p class="text-slate-600 mt-4 max-w-3xl mx-auto text-lg">
+                        Welcome to Mountain Breeze, a meticulously designed retreat for those who seek tranquility without sacrificing an ounce of luxury. From the panoramic mountain views to the thoughtfully appointed interiors, every detail is crafted to provide an unforgettable experience. Explore the property below and take the first step towards your perfect escape.
+                    </p>
+                    <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
+                     <a href="#" class="mt-8 bg-green-800 text-white font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105 duration-300 inline-block">
+                        Check Availability & Book
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Row 1 -->
+                    <div class="col-span-2 md:col-span-2">
+                         <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461553/71-7AE_9039_hje2rh.jpg" data-fancybox="gallery">
+                            <img alt="Deck with chairs overlooking the mountains" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_1200/v1759461553/71-7AE_9039_hje2rh.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461539/14-7AE_8298_dwsyji.jpg" data-fancybox="gallery">
+                             <img alt="Cozy living room area" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461539/14-7AE_8298_dwsyji.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                     <div>
+                        <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461554/75-DJI_0258_iirm0u.jpg" data-fancybox="gallery">
+                             <img alt="Drone view of property and surrounding trees" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461554/75-DJI_0258_iirm0u.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <!-- Row 2 -->
+                    <div>
+                        <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461540/16-7AE_8340_qrdmiz.jpg" data-fancybox="gallery">
+                             <img alt="Dining room table" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461540/16-7AE_8340_qrdmiz.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <div class="col-span-2 md:col-span-3">
+                         <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461555/79-DJI_0268_v7p3uk.jpg" data-fancybox="gallery">
+                            <img alt="Aerial view of Mountain Breeze" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_1800/v1759461555/79-DJI_0268_v7p3uk.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="col-span-2 md:col-span-3">
+                         <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg" data-fancybox="gallery">
+                            <img alt="Front exterior of the house" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_1800/v1759461536/01-7AE_9068_rgtehv.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                     <div>
+                        <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461544/50-7AE_7696_k9xp9w.jpg" data-fancybox="gallery">
+                            <img alt="Game room with pool table" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461544/50-7AE_7696_k9xp9w.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                     <!-- Row 4 -->
+                    <div>
+                        <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461549/66-7AE_8794_g52kx2.jpg" data-fancybox="gallery">
+                             <img alt="Second living area" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461549/66-7AE_8794_g52kx2.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <div>
+                         <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461548/63-7AE_7969_kx4nfj.jpg" data-fancybox="gallery">
+                            <img alt="Outdoor fire pit" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_600/v1759461548/63-7AE_7969_kx4nfj.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                    <!-- Row 5 -->
+                     <div class="col-span-2">
+                         <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461541/20-7AE_8508_lxw0n1.jpg" data-fancybox="gallery">
+                            <img alt="Dining area with view" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/c_fill,g_auto,h_600,w_1200/v1759461541/20-7AE_8508_lxw0n1.jpg" class="h-full w-full object-cover rounded-lg gallery-img"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button id="view-gallery-btn" class="text-green-800 font-bold py-3 px-8 rounded-lg hover:bg-green-50 transition duration-300">
+                        View Full Gallery &rarr;
+                    </button>
+                </div>
+
+                <!-- Hidden links for the full Fancybox gallery -->
+                <div class="hidden">
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461537/04-7AE_8647_jzqfnn.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461549/65-7AE_8731_sew9y0.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461543/28-7AE_7059_emu6yp.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461554/75-DJI_0258_iirm0u.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461554/73-DJI_0254_hjwygc.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461552/70-7AE_8949_b0wxlj.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461549/66-7AE_8794_g52kx2.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461546/59-7AE_7920_ne93qf.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461544/50-7AE_7696_k9xp9w.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461542/22-7AE_8542_jnu4gk.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461540/16-7AE_8340_qrdmiz.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461539/14-7AE_8298_dwsyji.jpg" data-fancybox="gallery"></a>
+                    <a href="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461538/12-7AE_8270_flkvce.jpg" data-fancybox="gallery"></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Amenities -->
+        <section id="amenities" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-900">A Five-Star Experience</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">We've stocked Mountain Breeze with premium amenities to make your stay effortless, relaxing, and memorable.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                        <i data-feather="thermometer" class="h-10 w-10 mx-auto text-green-800 mb-3"></i>
+                        <span class="font-semibold">Outdoor Hot Tub</span>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                        <i data-feather="sunset" class="h-10 w-10 mx-auto text-green-800 mb-3"></i>
+                        <span class="font-semibold">Private Sauna</span>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                        <i data-feather="activity" class="h-10 w-10 mx-auto text-green-800 mb-3"></i>
+                        <span class="font-semibold">Private Gym</span>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                        <i data-feather="wifi" class="h-10 w-10 mx-auto text-green-800 mb-3"></i>
+                        <span class="font-semibold">High-Speed WiFi</span>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                        <i data-feather="coffee" class="h-10 w-10 mx-auto text-green-800 mb-3"></i>
+                        <span class="font-semibold">Gourmet Kitchen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- REVISED Things to Do -->
+        <section id="explore" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-900">Explore the Heart of Virginia</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">From scenic wineries to historic trails, our prime location offers the best of the Virginia countryside at your doorstep.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Attraction 1 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Winery" alt="Scenic view of a local winery" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-slate-50">
+                             <div class="flex items-center mb-3">
+                                <i data-feather="map-pin" class="text-green-800 h-6 w-6 mr-3"></i>
+                                <h3 class="text-xl font-bold">Local Wineries</h3>
+                            </div>
+                            <p class="text-slate-600">Spend an afternoon tasting award-winning wines at several nearby vineyards, just a short scenic drive away.</p>
+                        </div>
+                    </div>
+                    <!-- Attraction 2 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Hiking" alt="Mountain hiking trail" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-slate-50">
+                            <div class="flex items-center mb-3">
+                                <i data-feather="trending-up" class="text-green-800 h-6 w-6 mr-3"></i>
+                                <h3 class="text-xl font-bold">Scenic Hiking Trails</h3>
+                            </div>
+                            <p class="text-slate-600">Discover breathtaking views from nearby trails, including sections of the Appalachian Trail.</p>
+                        </div>
+                    </div>
+                    <!-- Attraction 3 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Town" alt="Quaint historic town street" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-slate-50">
+                            <div class="flex items-center mb-3">
+                                <i data-feather="home" class="text-green-800 h-6 w-6 mr-3"></i>
+                                <h3 class="text-xl font-bold">Historic Towns</h3>
+                            </div>
+                            <p class="text-slate-600">Explore charming downtowns filled with antique shops, cozy cafes, and rich American history.</p>
+                        </div>
+                    </div>
+                    <!-- Attraction 4 -->
+                     <div class="rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Lake" alt="Kayaks on a serene lake" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-slate-50">
+                             <div class="flex items-center mb-3">
+                                <i data-feather="anchor" class="text-green-800 h-6 w-6 mr-3"></i>
+                                <h3 class="text-xl font-bold">Lakeside Fun</h3>
+                            </div>
+                            <p class="text-slate-600">Enjoy a day of fishing, kayaking, or simply relaxing by the water at one of the beautiful nearby lakes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet The Host -->
+        <section id="host" class="py-20 bg-green-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <!-- Replace with host photo -->
+                        <img src="https://placehold.co/400x400/166534/f0fdf4?text=Your+Host" alt="Photo of your host, Jane Doe" class="rounded-full shadow-xl mx-auto">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-4xl font-bold text-slate-900">A Warm Welcome from Your Host</h2>
+                        <p class="text-slate-700 mt-4 text-lg">"We fell in love with the serene beauty of the Virginia mountains and created Mountain Breeze as a place for others to experience it too. To ensure you have a perfect stay, our professional property manager, Chris, is your dedicated contact for anything you need. His goal is to provide a 5-star, seamless experience so you can focus on making memories. We can't wait to host you!"</p>
+                        <p class="mt-4 font-bold text-slate-800">- The Owners & Chris</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVISED Final CTA -->
+        <section class="py-20 bg-green-800">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl font-bold">Your Virginia Escape Awaits</h2>
+                <p class="mt-4 text-lg max-w-2xl mx-auto text-green-200">Ready to trade city noise for mountain breezes? Book direct for the best experience.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto my-12">
+                    <div>
+                        <i data-feather="dollar-sign" class="h-10 w-10 mx-auto mb-3"></i>
+                        <h3 class="font-bold text-xl">Best Rate Guaranteed</h3>
+                        <p class="text-green-200">Avoid third-party fees</p>
+                    </div>
+                     <div>
+                        <i data-feather="message-square" class="h-10 w-10 mx-auto mb-3"></i>
+                        <h3 class="font-bold text-xl">Direct Communication</h3>
+                        <p class="text-green-200">Personalized service</p>
+                    </div>
+                     <div>
+                        <i data-feather="gift" class="h-10 w-10 mx-auto mb-3"></i>
+                        <h3 class="font-bold text-xl">Exclusive Perks</h3>
+                        <p class="text-green-200">Early check-in options</p>
+                    </div>
+                </div>
+
+                <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
+                <a href="#" class="bg-white text-green-800 font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-slate-100 transition transform hover:scale-105 duration-300 inline-block">
+                    Book Mountain Breeze Now
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About Column -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-2">Mountain Breeze</h3>
+                    <p class="text-slate-400">Your secluded luxury retreat in the beautiful Virginia countryside. We look forward to hosting you.</p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#property" class="hover:text-green-400 transition-colors">The Property</a></li>
+                        <li><a href="#amenities" class="hover:text-green-400 transition-colors">Amenities</a></li>
+                        <li><a href="#explore" class="hover:text-green-400 transition-colors">Explore</a></li>
+                        <li><a href="#host" class="hover:text-green-400 transition-colors">Your Host</a></li>
+                        <li><a href="mailto:chris@opstrllc.com" class="hover:text-green-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect Column -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Connect With Us</h4>
+                    <p class="mb-4">Rural Retreat, Virginia</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="hover:text-green-400 transition-colors"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-green-400 transition-colors"><i data-feather="facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; 2025 Mountain Breeze. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Fancybox JS for Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        // Script to activate Feather icons
+        feather.replace();
+
+        // Initialize Fancybox
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            // Your custom options
+        });
+
+        // Add event listener for our new gallery button
+        document.getElementById('view-gallery-btn').addEventListener('click', function() {
+            // Find the first link in the hidden gallery div and trigger a click to open the lightbox
+            document.querySelector('.hidden [data-fancybox="gallery"]').click();
+        });
+    </script>
+</body>
+</html>
+
+
