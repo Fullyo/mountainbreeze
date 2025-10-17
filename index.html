@@ -43,6 +43,10 @@
         .hero-text-shadow {
             text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
         }
+        .footer-logo {
+            filter: invert(1);
+            width: 200px; /* Adjust size as needed */
+        }
     </style>
     
     <!-- 
@@ -94,7 +98,9 @@
     <!-- Header -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-slate-900">Mountain Breeze</a>
+            <a href="#">
+                <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760672802/mountainbreezelogo_-_Edited_kvsqzf.png" alt="Mountain Breeze Logo" class="h-8 md:h-10">
+            </a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#property" class="text-slate-600 hover:text-green-800 transition duration-300">The Property</a>
                 <a href="#amenities" class="text-slate-600 hover:text-green-800 transition duration-300">Amenities</a>
@@ -102,8 +108,8 @@
                 <a href="#host" class="text-slate-600 hover:text-green-800 transition duration-300">Your Host</a>
                 <a href="mailto:chris@opstrllc.com" class="text-slate-600 hover:text-green-800 transition duration-300">Contact</a>
             </div>
-            <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
-            <a href="#" class="bg-green-800 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-green-900 transition transform hover:-translate-y-0.5 duration-300">
+            <!-- Guesty booking link added -->
+            <a href="https://mountainbreeze.guestybookings.com/en/properties/68e0099866b8a40012e10039?minOccupancy=1" target="_blank" class="bg-green-800 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-green-900 transition transform hover:-translate-y-0.5 duration-300">
                 Book Now
             </a>
         </nav>
@@ -131,8 +137,8 @@
                     <p class="text-slate-600 mt-4 max-w-3xl mx-auto text-lg">
                         Welcome to Mountain Breeze, a meticulously designed retreat for those who seek tranquility without sacrificing an ounce of luxury. From the panoramic mountain views to the thoughtfully appointed interiors, every detail is crafted to provide an unforgettable experience. Explore the property below and take the first step towards your perfect escape.
                     </p>
-                    <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
-                     <a href="#" class="mt-8 bg-green-800 text-white font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105 duration-300 inline-block">
+                    <!-- Guesty booking link added -->
+                     <a href="https://mountainbreeze.guestybookings.com/en/properties/68e0099866b8a40012e10039?minOccupancy=1" target="_blank" class="mt-8 bg-green-800 text-white font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105 duration-300 inline-block">
                         Check Availability & Book
                     </a>
                 </div>
@@ -350,9 +356,9 @@
                     </div>
                 </div>
 
-                <!-- IMPORTANT: Replace '#' with your actual Guesty booking link -->
-                <a href="#" class="bg-white text-green-800 font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-slate-100 transition transform hover:scale-105 duration-300 inline-block">
-                    Book Mountain Breeze Now
+                <!-- Guesty booking link added and text updated -->
+                <a href="https://mountainbreeze.guestybookings.com/en/properties/68e0099866b8a40012e10039?minOccupancy=1" target="_blank" class="bg-white text-green-800 font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-slate-100 transition transform hover:scale-105 duration-300 inline-block">
+                    Secure Your Dates
                 </a>
             </div>
         </section>
@@ -364,9 +370,8 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <!-- About Column -->
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold text-white mb-2">Mountain Breeze</h3>
-                    <p class="text-slate-400">Your secluded luxury retreat in the beautiful Virginia countryside. We look forward to hosting you.</p>
+                <div class="mb-6 md:mb-0 flex items-center justify-center md:justify-start">
+                    <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760672802/mountainbreezelogo_-_Edited_kvsqzf.png" alt="Mountain Breeze Logo" class="footer-logo mb-2">
                 </div>
 
                 <!-- Quick Links Column -->
@@ -417,5 +422,4 @@
     </script>
 </body>
 </html>
-
 
