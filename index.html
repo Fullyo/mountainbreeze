@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Breeze | Luxury Secluded Cabin in Rural Virginia</title>
-    <meta name="description" content="Escape to Mountain Breeze, a luxurious and secluded vacation rental in the heart of the Virginia countryside. Your private getaway for relaxation and adventure awaits.">
+    <title>Mountain Breeze | Luxury Rental in Lovettsville, VA</title>
+    <meta name="description" content="Escape to Mountain Breeze, a luxurious and secluded vacation rental in Lovettsville, Virginia. Your private getaway in the heart of Loudoun County's wine country awaits.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23166534%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2250%22 font-family=%22sans-serif%22 fill=%22%23ffffff%22>MB</text></svg>">
+
+    <!-- Social Media Share Tags (Open Graph & Twitter) -->
+    <meta property="og:title" content="Mountain Breeze | Luxury Rental in Lovettsville, VA" />
+    <meta property="og:description" content="A luxurious and secluded vacation rental in the heart of Loudoun County's wine country." />
+    <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg" />
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mountain Breeze | Luxury Rental in Lovettsville, VA" />
+    <meta name="twitter:description" content="A luxurious and secluded vacation rental in the heart of Loudoun County's wine country." />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg" />
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,6 +30,9 @@
 
     <!-- Feather Icons for simple icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font Awesome for star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Fancybox CSS for Lightbox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
@@ -44,26 +61,33 @@
             text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
         }
         .footer-logo {
-            filter: invert(1);
+            filter: brightness(0) invert(1); /* Corrected filter for pure white */
             width: 200px; /* Adjust size as needed */
         }
     </style>
     
     <!-- 
-      SEO BEST PRACTICE: JSON-LD Structured Data
-      This tells Google that your page is about a Vacation Rental.
+      SEO BEST PRACTICE: JSON-LD Structured Data - UPDATED
     -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "VacationRental",
       "name": "Mountain Breeze",
-      "description": "A secluded luxury retreat in the Virginia Countryside, perfect for romantic getaways and family vacations.",
+      "description": "A secluded luxury retreat in Lovettsville, Virginia, perfect for romantic getaways and family vacations.",
       "image": "https://res.cloudinary.com/dvdxbzv6a/image/upload/v1759461536/01-7AE_9068_rgtehv.jpg",
+       "numberOfBedrooms": 4,
+       "numberOfBathroomsTotal": 4,
+       "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 8
+       },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Rural Retreat",
+        "streetAddress": "38276 Mountain Air Lane",
+        "addressLocality": "Lovettsville",
         "addressRegion": "VA",
+        "postalCode": "20180",
         "addressCountry": "US"
       },
       "petsAllowed": "False",
@@ -104,6 +128,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#property" class="text-slate-600 hover:text-green-800 transition duration-300">The Property</a>
                 <a href="#amenities" class="text-slate-600 hover:text-green-800 transition duration-300">Amenities</a>
+                <a href="#reviews" class="text-slate-600 hover:text-green-800 transition duration-300">Guest Experience</a>
                 <a href="#explore" class="text-slate-600 hover:text-green-800 transition duration-300">Explore</a>
                 <a href="#host" class="text-slate-600 hover:text-green-800 transition duration-300">Your Host</a>
                 <a href="mailto:chris@opstrllc.com" class="text-slate-600 hover:text-green-800 transition duration-300">Contact</a>
@@ -124,7 +149,7 @@
             <div class="container mx-auto px-6 relative z-10 text-center pb-8 md:pb-16">
                 <div class="max-w-3xl mx-auto">
                     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 hero-text-shadow">Experience Secluded Luxury.</h1>
-                    <p class="text-lg md:text-xl text-slate-200 hero-text-shadow">Unwind in the heart of the Virginia Countryside. Your private sanctuary awaits.</p>
+                    <p class="text-lg md:text-xl text-slate-200 hero-text-shadow">Unwind in Lovettsville, the heart of the Virginia Countryside. Your private sanctuary awaits.</p>
                 </div>
             </div>
         </section>
@@ -137,12 +162,34 @@
                     <p class="text-slate-600 mt-4 max-w-3xl mx-auto text-lg">
                         Welcome to Mountain Breeze, a meticulously designed retreat for those who seek tranquility without sacrificing an ounce of luxury. From the panoramic mountain views to the thoughtfully appointed interiors, every detail is crafted to provide an unforgettable experience. Explore the property below and take the first step towards your perfect escape.
                     </p>
-                    <!-- Guesty booking link added -->
-                     <a href="https://mountainbreeze.guestybookings.com/en/properties/68e0099866b8a40012e10039?minOccupancy=1" target="_blank" class="mt-8 bg-green-800 text-white font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105 duration-300 inline-block">
-                        Check Availability & Book
-                    </a>
                 </div>
                 
+                <!-- NEW At-a-Glance Section -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-12 text-center">
+                    <div class="p-4 bg-slate-50 rounded-lg">
+                        <i data-feather="users" class="h-8 w-8 mx-auto text-green-800 mb-2"></i>
+                        <span class="font-bold text-lg">8 Guests</span>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg">
+                        <i data-feather="moon" class="h-8 w-8 mx-auto text-green-800 mb-2"></i>
+                        <span class="font-bold text-lg">4 Bedrooms</span>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg">
+                        <i data-feather="wind" class="h-8 w-8 mx-auto text-green-800 mb-2"></i>
+                        <span class="font-bold text-lg">4 Bathrooms</span>
+                    </div>
+                     <div class="p-4 bg-slate-50 rounded-lg">
+                        <i data-feather="map" class="h-8 w-8 mx-auto text-green-800 mb-2"></i>
+                        <span class="font-bold text-lg">10 Private Acres</span>
+                    </div>
+                </div>
+
+                 <div class="text-center mb-12">
+                     <a href="https://mountainbreeze.guestybookings.com/en/properties/68e0099866b8a40012e10039?minOccupancy=1" target="_blank" class="bg-green-800 text-white font-bold py-4 px-10 text-lg rounded-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105 duration-300 inline-block">
+                        Check Availability & Book
+                    </a>
+                 </div>
+
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <!-- Row 1 -->
                     <div class="col-span-2 md:col-span-2">
@@ -258,57 +305,75 @@
                 </div>
             </div>
         </section>
-        
-        <!-- REVISED Things to Do -->
+
+        <!-- NEW "Guest Favorite" Section -->
+        <section id="reviews" class="py-20 bg-green-50">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-4xl font-bold text-slate-900">An Unforgettable Stay Awaits</h2>
+                 <p class="text-slate-600 mt-4 max-w-2xl mx-auto">We're dedicated to providing a 5-star experience for every guest. From pristine cleanliness to our responsive service, we're confident your stay will be nothing short of perfect.</p>
+                 <div class="flex justify-center items-center space-x-2 text-yellow-500 mt-6">
+                    <i class="fas fa-star text-3xl"></i>
+                    <i class="fas fa-star text-3xl"></i>
+                    <i class="fas fa-star text-3xl"></i>
+                    <i class="fas fa-star text-3xl"></i>
+                    <i class="fas fa-star text-3xl"></i>
+                 </div>
+                 <div class="mt-8">
+                     <p class="font-semibold text-lg text-slate-800">Your perfect Virginia countryside escape is just a click away.</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- REVISED Things to Do - UPDATED with REAL IMAGES -->
         <section id="explore" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-slate-900">Explore the Heart of Virginia</h2>
-                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">From scenic wineries to historic trails, our prime location offers the best of the Virginia countryside at your doorstep.</p>
+                    <h2 class="text-4xl font-bold text-slate-900">Explore Lovettsville & Loudoun County</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">From award-winning wineries to the historic Potomac River, our prime location offers the best of Northern Virginia at your doorstep.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Attraction 1 -->
                     <div class="rounded-lg shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Winery" alt="Scenic view of a local winery" class="w-full h-48 object-cover">
+                        <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760677197/Bluemont_bottle_on_deck_e0d0e341-5056-a36a-07f411f57bcdc53a_zxdbw7.jpg" alt="Wine bottle and glasses on a deck overlooking a vineyard" class="w-full h-48 object-cover">
                         <div class="p-6 bg-slate-50">
                              <div class="flex items-center mb-3">
                                 <i data-feather="map-pin" class="text-green-800 h-6 w-6 mr-3"></i>
-                                <h3 class="text-xl font-bold">Local Wineries</h3>
+                                <h3 class="text-xl font-bold">Loudoun Wine Country</h3>
                             </div>
-                            <p class="text-slate-600">Spend an afternoon tasting award-winning wines at several nearby vineyards, just a short scenic drive away.</p>
+                            <p class="text-slate-600">Spend an afternoon tasting award-winning wines at dozens of nearby vineyards in DC's Wine Country.</p>
                         </div>
                     </div>
                     <!-- Attraction 2 -->
                     <div class="rounded-lg shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Hiking" alt="Mountain hiking trail" class="w-full h-48 object-cover">
+                        <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760677197/Hay-Rock-Appalachian-Trail-31_ECED05B5-B3CF-A9EC-298E203E97F6EB8A-eced006c0ad5fd1_eced12f8-f8a8-bdfa-cc177d44d858d969_a31xmn.jpg" alt="Mountain overlook from a hiking trail" class="w-full h-48 object-cover">
                         <div class="p-6 bg-slate-50">
                             <div class="flex items-center mb-3">
                                 <i data-feather="trending-up" class="text-green-800 h-6 w-6 mr-3"></i>
-                                <h3 class="text-xl font-bold">Scenic Hiking Trails</h3>
+                                <h3 class="text-xl font-bold">Appalachian Trail</h3>
                             </div>
-                            <p class="text-slate-600">Discover breathtaking views from nearby trails, including sections of the Appalachian Trail.</p>
+                            <p class="text-slate-600">Discover breathtaking views from the legendary Appalachian Trail, with access points just a short drive away.</p>
                         </div>
                     </div>
                     <!-- Attraction 3 -->
                     <div class="rounded-lg shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Town" alt="Quaint historic town street" class="w-full h-48 object-cover">
+                        <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760677196/shutterstock_173888309_2022-06-13-204020_wduv_yotvfa.avif" alt="Historic town street of Harpers Ferry" class="w-full h-48 object-cover">
                         <div class="p-6 bg-slate-50">
                             <div class="flex items-center mb-3">
                                 <i data-feather="home" class="text-green-800 h-6 w-6 mr-3"></i>
-                                <h3 class="text-xl font-bold">Historic Towns</h3>
+                                <h3 class="text-xl font-bold">Historic Harpers Ferry</h3>
                             </div>
-                            <p class="text-slate-600">Explore charming downtowns filled with antique shops, cozy cafes, and rich American history.</p>
+                            <p class="text-slate-600">Explore this charming historic town at the confluence of two rivers, filled with shops, cafes, and rich Civil War history.</p>
                         </div>
                     </div>
                     <!-- Attraction 4 -->
                      <div class="rounded-lg shadow-lg overflow-hidden group">
-                        <img src="https://placehold.co/600x400/166534/f0fdf4?text=Lake" alt="Kayaks on a serene lake" class="w-full h-48 object-cover">
+                        <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760677196/NV18091103V_022_8022be72-d9fe-4407-98b1-9a19a4da7efb_ejkdez.jpg" alt="People kayaking on the Potomac River" class="w-full h-48 object-cover">
                         <div class="p-6 bg-slate-50">
                              <div class="flex items-center mb-3">
-                                <i data-feather="anchor" class="text-green-800 h-6 w-6 mr-3"></i>
-                                <h3 class="text-xl font-bold">Lakeside Fun</h3>
+                                <i data-feather="life-buoy" class="text-green-800 h-6 w-6 mr-3"></i>
+                                <h3 class="text-xl font-bold">Potomac River Fun</h3>
                             </div>
-                            <p class="text-slate-600">Enjoy a day of fishing, kayaking, or simply relaxing by the water at one of the beautiful nearby lakes.</p>
+                            <p class="text-slate-600">Enjoy a day of fishing, kayaking, tubing, or simply relaxing by the water on the scenic Potomac River.</p>
                         </div>
                     </div>
                 </div>
@@ -365,13 +430,16 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer - UPDATED -->
     <footer class="bg-slate-900 text-slate-300 pt-16 pb-8">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <!-- About Column -->
-                <div class="mb-6 md:mb-0 flex items-center justify-center md:justify-start">
-                    <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760672802/mountainbreezelogo_-_Edited_kvsqzf.png" alt="Mountain Breeze Logo" class="footer-logo mb-2">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center justify-center md:justify-start mb-4">
+                        <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1760672802/mountainbreezelogo_-_Edited_kvsqzf.png" alt="Mountain Breeze Logo" class="footer-logo">
+                    </div>
+                     <p class="text-sm text-slate-400 max-w-xs mx-auto md:mx-0">Your secluded luxury retreat in the heart of the Virginia countryside. Unwind, explore, and create memories.</p>
                 </div>
 
                 <!-- Quick Links Column -->
@@ -380,6 +448,7 @@
                     <ul class="space-y-2">
                         <li><a href="#property" class="hover:text-green-400 transition-colors">The Property</a></li>
                         <li><a href="#amenities" class="hover:text-green-400 transition-colors">Amenities</a></li>
+                        <li><a href="#reviews" class="hover:text-green-400 transition-colors">Guest Experience</a></li>
                         <li><a href="#explore" class="hover:text-green-400 transition-colors">Explore</a></li>
                         <li><a href="#host" class="hover:text-green-400 transition-colors">Your Host</a></li>
                         <li><a href="mailto:chris@opstrllc.com" class="hover:text-green-400 transition-colors">Contact</a></li>
@@ -388,12 +457,8 @@
 
                 <!-- Connect Column -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-3">Connect With Us</h4>
-                    <p class="mb-4">Rural Retreat, Virginia</p>
-                    <div class="flex justify-center md:justify-start space-x-4">
-                        <a href="#" class="hover:text-green-400 transition-colors"><i data-feather="instagram"></i></a>
-                        <a href="#" class="hover:text-green-400 transition-colors"><i data-feather="facebook"></i></a>
-                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Location</h4>
+                    <p class="mb-4">Lovettsville, Virginia</p>
                 </div>
             </div>
             <div class="mt-12 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
